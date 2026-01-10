@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI 播客</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: system-ui, sans-serif; line-height: 1.6; color: #333; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh; padding: 40px 20px; }
+    .container { max-width: 800px; margin: 0 auto; }
+    .header { text-align: center; color: white; margin-bottom: 40px; }
+    .header img { width: 150px; height: 150px; border-radius: 20px; margin-bottom: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.3); }
+    .header h1 { font-size: 32px; margin-bottom: 10px; }
+    .header p { opacity: 0.9; }
+    .actions { margin-top: 20px; }
+    .btn { display: inline-block; padding: 10px 20px; background: white; color: #667eea; border-radius: 8px; text-decoration: none; font-weight: 600; margin: 5px; }
+    .episodes { background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 40px rgba(0,0,0,0.2); }
+    .episode { padding: 20px 30px; border-bottom: 1px solid #eee; display: flex; align-items: center; gap: 20px; }
+    .episode:last-child { border-bottom: none; }
+    .episode:hover { background: #f9f9f9; }
+    .episode a { text-decoration: none; color: inherit; flex: 1; }
+    .ep-num { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; width: 50px; height: 50px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-weight: 700; flex-shrink: 0; }
+    .ep-title { font-weight: 600; font-size: 16px; margin-bottom: 5px; }
+    .ep-date { color: #999; font-size: 14px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="https://pub-426b749508ae4f1da2513b2935b3bba0.r2.dev/podcast-cover.png" alt="Daily AI 播客">
+      <h1>Daily AI 播客</h1>
+      <p>每日分享最新的 AI 资讯、技术趋势和行业洞察</p>
+      <div class="actions">
+        <a href="feed.xml" class="btn">📡 订阅 RSS</a>
+        <a href="../../" class="btn">🏠 返回首页</a>
+      </div>
+    </div>
+    <div class="episodes">
+      <div class="episode">
+        <div class="ep-num">02</div>
+        <a href="episodes/2.html">
+          <div class="ep-title">智识之困：IMO金牌背后，AGI的真面目与RL的幻象</div>
+          <div class="ep-date">2026/1/8</div>
+        </a>
+      </div>
+      <div class="episode">
+        <div class="ep-num">01</div>
+        <a href="episodes/1.html">
+          <div class="ep-title">ChatGPT-4.5 发布，多模态能力全面升级</div>
+          <div class="ep-date">2025/1/4</div>
+        </a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

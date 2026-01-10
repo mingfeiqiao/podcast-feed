@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>系统会思考吗？</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: system-ui, sans-serif; line-height: 1.6; color: #333; background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%); min-height: 100vh; padding: 40px 20px; }
+    .container { max-width: 800px; margin: 0 auto; }
+    .header { text-align: center; color: white; margin-bottom: 40px; }
+    .header img { width: 150px; height: 150px; border-radius: 20px; margin-bottom: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.3); }
+    .header h1 { font-size: 32px; margin-bottom: 10px; }
+    .header p { opacity: 0.9; }
+    .actions { margin-top: 20px; }
+    .btn { display: inline-block; padding: 10px 20px; background: white; color: #11998e; border-radius: 8px; text-decoration: none; font-weight: 600; margin: 5px; }
+    .episodes { background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 40px rgba(0,0,0,0.2); }
+    .empty { padding: 60px 30px; text-align: center; color: #999; }
+    .episode { padding: 20px 30px; border-bottom: 1px solid #eee; display: flex; align-items: center; gap: 20px; }
+    .episode:last-child { border-bottom: none; }
+    .episode:hover { background: #f9f9f9; }
+    .episode a { text-decoration: none; color: inherit; flex: 1; }
+    .ep-num { background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%); color: white; width: 50px; height: 50px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-weight: 700; flex-shrink: 0; }
+    .ep-title { font-weight: 600; font-size: 16px; margin-bottom: 5px; }
+    .ep-date { color: #999; font-size: 14px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="https://pub-426b749508ae4f1da2513b2935b3bba0.r2.dev/podcast-cover.png" alt="系统会思考吗？">
+      <h1>系统会思考吗？</h1>
+      <p>一档围绕 AI Agent、自主系统与复杂自动化的深度播客</p>
+      <div class="actions">
+        <a href="feed.xml" class="btn">📡 订阅 RSS</a>
+        <a href="../../" class="btn">🏠 返回首页</a>
+      </div>
+    </div>
+    <div class="episodes">
+      <div class="empty">🎙️ 敬请期待第一期节目...</div>
+    </div>
+  </div>
+</body>
+</html>

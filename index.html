@@ -1,13 +1,51 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
-  <title>Daily AI 播客</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>播客合集</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: system-ui, sans-serif; line-height: 1.6; color: #333; background: #f5f5f5; min-height: 100vh; padding: 40px 20px; }
+    .container { max-width: 900px; margin: 0 auto; }
+    h1 { text-align: center; margin-bottom: 40px; font-size: 36px; }
+    .shows { display: grid; gap: 30px; }
+    .show-card { background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.1); transition: transform 0.3s; }
+    .show-card:hover { transform: translateY(-5px); }
+    .show-card a { text-decoration: none; color: inherit; display: flex; }
+    .show-cover { width: 200px; height: 200px; object-fit: cover; flex-shrink: 0; }
+    .show-info { padding: 30px; display: flex; flex-direction: column; justify-content: center; }
+    .show-title { font-size: 24px; font-weight: 700; margin-bottom: 10px; }
+    .show-desc { color: #666; font-size: 16px; }
+    @media (max-width: 600px) {
+      .show-card a { flex-direction: column; }
+      .show-cover { width: 100%; height: 200px; }
+    }
+  </style>
 </head>
 <body>
-  <h1>Daily AI 播客</h1>
-  <p>每日分享最新的 AI 资讯、技术趋势和行业洞察</p>
-  <a href="feed.xml">订阅 RSS</a>
+  <div class="container">
+    <h1>🎙️ 播客合集</h1>
+    <div class="shows">
+      <div class="show-card">
+        <a href="daily-ai/">
+          <img src="https://pub-426b749508ae4f1da2513b2935b3bba0.r2.dev/podcast-cover.png" alt="Daily AI 播客" class="show-cover">
+          <div class="show-info">
+            <div class="show-title">Daily AI 播客</div>
+            <div class="show-desc">每日分享最新的 AI 资讯、技术趋势和行业洞察</div>
+          </div>
+        </a>
+      </div>
+      <div class="show-card">
+        <a href="system-thinking/">
+          <img src="https://pub-426b749508ae4f1da2513b2935b3bba0.r2.dev/podcast-cover.png" alt="系统会思考吗？" class="show-cover">
+          <div class="show-info">
+            <div class="show-title">系统会思考吗？</div>
+            <div class="show-desc">一档围绕 AI Agent、自主系统与复杂自动化的深度播客</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
